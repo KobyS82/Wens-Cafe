@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import logo from "./wens-cafe-logo.png";
+import logo from "./clear-color-nologo.png";
 import Image from "next/image";
 
 export default function Navbar() {
