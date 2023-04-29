@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import logo from "./clear-color-nologo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -10,7 +11,11 @@ export default function Navbar() {
     <nav className="w-auto flex justify-between border border-spacing-2 items-center bg-black px-4 py-8">
       {/* Logo */}
       <div className="flex justify-start items-center hover:opacity-0 transition duration-500">
-        <Image src={logo} alt="logo" className="w-[110px] sm:w-[150px] xl:w-[210px] " />
+        <Image
+          src={logo}
+          alt="logo"
+          className="w-[110px] sm:w-[150px] xl:w-[210px] "
+        />
       </div>
       {/* Menu */}
       <ul className="hidden flex-1 justify-center items-center lg:flex">
@@ -70,6 +75,11 @@ export default function Navbar() {
               id="smallScreenLinks"
               className="flex flex-1 justify-center items-center flex-col "
             >
+              {/* Login */}
+              <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] sm:hidden hover:text-white">
+                <a href="#home">Login/ Register</a>
+              </li>
+              {/* Normal */}
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
                 <a href="#home">Home</a>
               </li>
