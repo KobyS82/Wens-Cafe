@@ -20,36 +20,36 @@ export default function Navbar() {
       {/* Menu */}
       <ul className="hidden flex-1 justify-center items-center lg:flex">
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <a href="#home">Home</a>
+          <Link href="#home">Home</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <a href="#">Home</a>
+          <Link href="#">Home</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <a href="#">Home</a>
+          <Link href="#">Home</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <a href="#">Home</a>
+          <Link href="#">Home</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <a href="#">Home</a>
+          <Link href="#">Home</Link>
         </li>
       </ul>
       {/* Log in / Register */}
       <div className="justify-end items-center hidden sm:flex ">
-        <a
+        <Link
           href="#login"
           className="my-0 mx-4 transition-all ease-in-out delay-75 duration-100 hover:border-b border-[#DCCA87]"
         >
           Log in / Register
-        </a>
+        </Link>
         <div className="w-[1px] h-[30px] bg-gray-600" />
-        <a
+        <Link
           href="#"
           className="my-0 mx-4 transition-all ease-in-out delay-75 duration-100 hover:border-b border-[#DCCA87]"
         >
           Cart
-        </a>
+        </Link>
       </div>
       {/* Hamburger Menu */}
       <div id="smallScreen" className="flex justify-end items-center">
@@ -77,23 +77,23 @@ export default function Navbar() {
             >
               {/* Login */}
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] sm:hidden hover:text-white">
-                <a href="#home">Login/ Register</a>
+                <Link href="#home">Login/ Register</Link>
               </li>
               {/* Normal */}
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <a href="#home">Home</a>
+                <Link href="#home">Home</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
             </ul>
           </div>
