@@ -20,10 +20,10 @@ export default function Navbar() {
       {/* Menu */}
       <ul className="hidden flex-1 justify-center items-center lg:flex">
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <Link href="#home">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <Link href="#">Home</Link>
+          <Link href="#home">Home</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
           <Link href="#">Home</Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
       {/* Log in / Register */}
       <div className="justify-end items-center hidden sm:flex ">
         <Link
-          href="#login"
+          href="/login"
           className="my-0 mx-4 transition-all ease-in-out delay-75 duration-100 hover:border-b border-[#DCCA87]"
         >
           Log in / Register
@@ -77,11 +77,11 @@ export default function Navbar() {
             >
               {/* Login */}
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] sm:hidden hover:text-white">
-                <Link href="#home">Login/ Register</Link>
+                <Link href="/login">Login/ Register</Link>
               </li>
               {/* Normal */}
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <Link href="#home">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
                 <Link href="#">Home</Link>
