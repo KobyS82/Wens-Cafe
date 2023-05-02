@@ -8,22 +8,24 @@ import Link from "next/link";
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="w-auto flex justify-between border border-spacing-2 items-center bg-black px-4 py-8">
+    <nav className="w-auto flex justify-between items-center bg-black p-4">
       {/* Logo */}
-      <div className="flex justify-start items-center hover:opacity-0 transition duration-500">
-        <Image
-          src={logo}
-          alt="logo"
-          className="w-[110px] sm:w-[150px] xl:w-[210px] "
-        />
+      <div className="flex justify-start items-center hover: transition duration-500">
+        <Link href="/">
+          <Image
+            src={logo}
+            alt="logo"
+            className="w-[110px] sm:w-[150px] xl:w-[210px] "
+          />
+        </Link>
       </div>
       {/* Menu */}
-      <ul className="hidden flex-1 justify-center items-center lg:flex">
+      <ul className="hidden flex-1 z-50 justify-center items-center lg:flex">
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <Link href="/">Home</Link>
+          <Link href="/menu">Menu</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
-          <Link href="#home">Home</Link>
+          <Link href="/about">About Us</Link>
         </li>
         <li className="my-0 mx-4 cursor-pointer hover:text-gray-500">
           <Link href="#">Home</Link>
@@ -45,7 +47,7 @@ export default function Navbar() {
         </Link>
         <div className="w-[1px] h-[30px] bg-gray-600" />
         <Link
-          href="#"
+          href="/cart"
           className="my-0 mx-4 transition-all ease-in-out delay-75 duration-100 hover:border-b border-[#DCCA87]"
         >
           Cart
@@ -79,12 +81,15 @@ export default function Navbar() {
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] sm:hidden hover:text-white">
                 <Link href="/login">Login/ Register</Link>
               </li>
+              <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] sm:hidden hover:text-white">
+                <Link href="/cart">Cart</Link>
+              </li>
               {/* Normal */}
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <Link href="/">Home</Link>
+                <Link href="/menu">Menu</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
-                <Link href="#">Home</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li className="m-8 text-3xl text-center cursor-pointer font-serif text-[#DCCA87] hover:text-white">
                 <Link href="#">Home</Link>

@@ -13,7 +13,7 @@ export default function Home() {
       <div className="absolute hidden md:block">
         <Image src={grayBackground} alt="background image" className="w-screen h-2/3 object-fill"/>
       </div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-10 py-6">
+      <div className="relative flex flex-col items-center justify-center h-full px-10 py-6">
         <h1 className="text-2xl font-bold">
           Next JS 13 Background Image with Tailwind CSS{" "}
         </h1>
